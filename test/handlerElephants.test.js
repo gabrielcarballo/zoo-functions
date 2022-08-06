@@ -20,6 +20,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Testa se o default da função é null', () => {
     expect(handlerElephants('')).toBe(null);
   });
+  it('aiusd', () => {
+    expect(handlerElephants('popularity')).toEqual(5);
+  });
 });
-
-console.log(handlerElephants('averageAge'));

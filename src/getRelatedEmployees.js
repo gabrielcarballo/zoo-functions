@@ -7,22 +7,12 @@ function isManager(id) {
 }
 isManager('9e7d4524-363c-416a-8759-8aa7e50c0992')
 function getRelatedEmployees(managerId) {
- const acc = []
-  if (isManager(managerId)){
-    const team = data.employees.managers.forEach((item) => {
-      if(item === managerId){
-        acc.push(item)
-        console.log(acc);
-      }
-      console.log(acc);
-      return acc
-      
-    },)
-    console.log(team);
-    return team;
-    
+  if (isManager(managerId)) {
+    const gettingManager = data.employees.filter((amIAManager) => amIAManager.managers.includes(managerId))
+      .map((gettingManaged) => `${gettingManaged.firstName} ${gettingManaged.lastName}`)
+    return gettingManager;
   }
-  
+  throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
 }
 
 module.exports = { isManager, getRelatedEmployees };

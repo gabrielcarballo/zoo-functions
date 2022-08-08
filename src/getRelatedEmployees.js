@@ -8,7 +8,6 @@ function isManager(id) {
   );
   return checkingManagers;
 }
-isManager('9e7d4524-363c-416a-8759-8aa7e50c0992');
 function getRelatedEmployees(managerId) {
   if (isManager(managerId)) {
     const gettingManager = data.employees.filter((amIAManager) =>

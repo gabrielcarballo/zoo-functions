@@ -11,7 +11,7 @@ const takeItAll = data.employees.map((e) => (
 function getEmployeesCoverage(info) {
   const test = info && takeItAll.find((e) =>
     e.id === info.id || e.fullName.split(' ')[0] === info.name
-  || e.fullName.split(' ')[1] === info.name);
+    || e.fullName.split(' ')[1] === info.name);
   if (test) { return test; }
 
   if (info) {

@@ -44,4 +44,4 @@ I welcome your feedback on my project! Feel free to share your thoughts and sugg
 
 ## Portfolio
 
-Check out my [portfolio](my-folio-weld.vercel.app/) for more of my work!
+Check out my [portfolio](http://my-folio-weld.vercel.app/) for more of my work!
